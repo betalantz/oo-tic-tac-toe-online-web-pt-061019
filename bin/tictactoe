@@ -5,8 +5,3 @@ require_relative '../lib/tic_tac_toe.rb'
 game = TicTacToe.new
 puts "Welcome to Tic Tac Toe!"
 game.play
-# puts "Where would you like to move?"
-# input = gets.strip
-# index = input_to_index(input)
-# new_game.move(index)
-# new_game.display_board
