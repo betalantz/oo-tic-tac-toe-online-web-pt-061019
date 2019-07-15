@@ -82,4 +82,8 @@ class TicTacToe
     self.draw? || self.won?
   end
 
+  def winner
+    "X" if won?.all?{|pos| @board[pos]=="X"}
+  end
+
 end
