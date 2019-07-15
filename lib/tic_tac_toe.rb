@@ -70,4 +70,8 @@ class TicTacToe
     WIN_COMBINATIONS.detect {|win_combo| win_combo.all?{|pos| @board[pos]=="X"} || win_combo.all?{|pos| @board[pos]=="O"}}
   end
 
+  def full?
+    self.turn_count == 9 && !self.won?
+  end
+
 end
