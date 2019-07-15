@@ -67,7 +67,7 @@ class TicTacToe
   end
 
   def won?
-    WIN_COMBINATIONS.any? {|wins| wins.all?{|pos| @board[pos]=="X"|| @board[pos]=="O"}}
+    WIN_COMBINATIONS.any? {|wins| wins.all?{|pos| @board[pos]=="X"} || wins.all?{|pos| @board[pos]=="O"}}
   end
 
 end
