@@ -83,8 +83,11 @@ class TicTacToe
   end
 
   def winner
-    "X" if won?.all?{|pos| @board[pos]=="X"}
-    "O" if won?.all?{|pos| @board[pos]=="O"}
+    if won?.all?{|pos| @board[pos]=="X"}
+      "X"
+    else
+      "O"
+    end
   end
 
 end
