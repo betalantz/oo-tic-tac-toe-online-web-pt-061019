@@ -78,4 +78,8 @@ class TicTacToe
     self.full? && !self.won?
   end
 
+  def over?
+    self.draw?
+  end
+
 end
