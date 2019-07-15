@@ -92,6 +92,7 @@ class TicTacToe
     # else
     #   "O"
     # end
+    return nil unless won?
     @board[self.won?[0]]
   end
 
